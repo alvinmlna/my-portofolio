@@ -1,0 +1,203 @@
+:root {
+    --purple: #651EF4;
+    --purpleH: #500dd6;
+    --size-fluid-1: clamp(.5rem, 1vw, 1rem);
+    --clr-accent: var(--clr-accent--dark);
+    --rounded: var(--radius-3);
+    --clr-bg-muted--dark: 234 21.1% 27.8%;
+    --fs-300: var(--font-size-fluid-0);
+    --font-size-fluid-0: clamp(.9rem, 2vw, 1rem);
+    --tr-speed-normal: .35s;
+    --clr-tertiary--dark: 183 91.3% 50.4%;
+    --clr-tertiary: var(--clr-tertiary--dark);
+    --tr-squish: var(--ease-squish-3); 
+  }
+
+body {
+    margin: 0;
+    line-height: inherit;
+    background-color: #1C1E2B !important;
+}
+
+
+.text-navbar a {
+    font-family: DM Sans;
+    color: rgba(167, 168, 168, 1);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.text-navbar a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-h2 {
+    font-family: "Anek Latin", sans-serif;
+    color: white;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700
+}
+
+@media (min-width: 768px) {
+    .text-h2 {
+        font-size:45px;
+        line-height: 52px;
+        font-weight: 700
+    }
+}
+.text-p1 {
+    font-family: "Anek Latin", sans-serif;
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400
+}
+
+:where(.underline):after {
+    content: "";
+    position: absolute;
+    bottom: -.15em;
+    left: 0;
+    height: .15em;
+    width: 100%;
+    border-radius: 100vmax;
+    z-index: -1;
+    background-color: var(--purple);
+}
+
+:where(.underline) {
+    position: relative;
+}
+
+.text-button {
+    display: inline-flex;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-family: DM Sans;
+    background-color: var(--purple);
+    color: #eff6ff;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.text-button:hover {
+    background-color: var(--purpleH);
+}
+
+.project-container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: var(--size-fluid-3)
+}
+
+.card-body {
+    background-color: #2A2C47;
+    flex: 1 1 auto;
+    color: white;
+}
+
+.card {
+    border-radius: 15px;
+    border-color: #2A2C47 !important;
+    color:white !important;
+    border-radius: 30px !important;
+    width: 23rem;
+}
+
+.card-footer {
+    background-color: #383B56 !important;
+    border-top: 1px solid hsl(41 99% 58.8%) !important;
+    padding: 1rem !important;
+    border-radius: 0 0 15px 15px !important;
+}
+
+@media (min-width: 1280px) {
+    .xl\:mt-48 {
+        margin-top:12rem
+    }
+
+    .xl\:max-w-\[1024px\] {
+        max-width: 1280px
+    }
+
+    .xl\:px-40 {
+        padding-left: 10rem;
+        padding-right: 10rem
+    }
+}
+
+.nav-padding {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem ;
+}
+
+.footer{
+    border-bottom: calc(var(--size-fluid-1) * .5) solid hsl(var(--clr-accent));
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.project-tags {
+    background-color: hsl(var(--clr-bg-muted));
+    padding: var(--size-fluid-2) var(--size-fluid-3);
+    border-bottom-left-radius: var(--rounded);
+    border-bottom-right-radius: var(--rounded);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: var(--fs-300);
+    gap: var(--size-2) var(--size-fluid-1)
+}
+
+
+.project-tag {
+    background-color: hsl(var(--clr-bg-muted));
+    color: hsl(var(--clr-tertiary));
+    border: none;
+    border-radius: 100vmax;
+    padding: .2em .4em;
+    cursor:default  !important; 
+    box-shadow: 0 0 0 -.1em hsl(var(--clr-bg-muted)),0 0 0 -.2em hsl(var(--clr-tertiary) / .75);
+    transition: box-shadow var(--tr-speed-normal) var(--tr-squish),background-color var(--tr-speed-fast) ease-in-out
+}
+
+
+/* .project-tag:is(:active,:hover),.project-tag[data-active=true] {
+    background-color: hsl(var(--clr-tertiary) / .1)
+} */
+
+/* .project-tag:focus {
+    outline: none
+}
+
+.project-tag:focus-visible {
+    box-shadow: 0 0 0 .1em hsl(var(--clr-bg-muted)),0 0 0 .3em hsl(var(--clr-tertiary) / .75)
+} */
+
+.project-tag span {
+    pointer-events: none;
+    opacity: .3
+}
+
+.card-body {
+    font-family: "Anek Latin", sans-serif;
+}
+
+.card-title a {
+    text-decoration: none;
+    font-family: inherit;
+    color: white;
+}

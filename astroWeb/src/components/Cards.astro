@@ -1,0 +1,36 @@
+---
+const {href = "#"} = Astro.props;
+const {title} = Astro.props;
+const {description} = Astro.props;
+const {IsdetailVideo = false} = Astro.props;
+const {img} = Astro.props;
+const {tags} = Astro.props;
+
+let listOfTag : string[] = [];
+if (tags) {
+  listOfTag = tags.split(",") as string[]
+}
+---
+
+
+<div class="card">
+    <a href={href}  target="_blank">
+        <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="...">
+    </a>
+    <div class="card-body">
+      <p class="card-title"><a href={href} style="font-size: 20px;" target="_blank">{title}</a></p>
+      <p class="card-text">{description}</p>
+        
+      <a href={href}  target="_blank" class="text-button mt-6">More details</a>
+    </div>
+        <div class="card-footer">
+            <div class="project-tags" role="list">
+                {listOfTag.map((item) => (
+                  <button class="project-tag">
+                    <span aria-hidden="true">#</span>
+                    {item}
+                  </button>
+                ))}
+              </div>
+        </div>
+</div>
