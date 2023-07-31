@@ -1,0 +1,22 @@
+# build output
+astroWeb/dist/
+# generated types
+astroWeb/.astro/
+
+# dependencies
+astroWeb/node_modules/
+
+# logs
+astroWeb/npm-debug.log*
+astroWeb/yarn-debug.log*
+astroWeb/yarn-error.log*
+astroWeb/pnpm-debug.log*
+
+
+# environment variables
+astroWeb/.env
+astroWeb/.env.production
+
+# macOS-specific files
+.DS_Store
+
