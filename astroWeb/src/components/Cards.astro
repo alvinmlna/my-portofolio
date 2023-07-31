@@ -13,15 +13,36 @@ if (tags) {
 ---
 
 
+
 <div class="card">
-    <a href={href}  target="_blank">
-        <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="...">
-    </a>
+
+    {
+      !IsdetailVideo ? 
+      <a href={href}  target="_blank"> <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="..."></a>
+      :
+      <a href={href} class="popup-youtube"  style="font-size: 20px;" target="_blank"> <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="..."></a>
+    }
+    
     <div class="card-body">
-      <p class="card-title"><a href={href} style="font-size: 20px;" target="_blank">{title}</a></p>
-      <p class="card-text">{description}</p>
+
+      <p class="card-title">
+        {
+          !IsdetailVideo ? 
+          <a href={href} style="font-size: 20px;" target="_blank">{title}</a>
+          :
+          <a href={href} class="popup-youtube" style="font-size: 20px;" target="_blank">{title}</a>
+        }
+      </p>
+
+      <p class="card-text">{description}<slot/></p>
         
-      <a href={href}  target="_blank" class="text-button mt-6">More details</a>
+      {
+        !IsdetailVideo ? 
+        <a href={href}  target="_blank" class="text-button mt-6">More details</a> 
+        :
+        <a class="popup-youtube text-button mt-6" href={href} >More details</a>
+      }
+      
     </div>
         <div class="card-footer">
             <div class="project-tags" role="list">
