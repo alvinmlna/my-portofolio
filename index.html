@@ -15,11 +15,19 @@
 
     <script>
         $( document ).ready(function() {
-          $('#headerVideoLink').magnificPopup({
-          type:'inline',
-          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-          });
-      });
+            $(document).ready(function() {
+                $('.popup-youtube').magnificPopup({
+                    disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+
+                    fixedContentPos: false
+                });
+            });
+
+        });
          
       </script>
 
@@ -79,37 +87,6 @@
                     <section id="hobby" class="w-full xl:max-w-[1024px]">
                         <div id="target-hobby-last"></div>
                         <div class="w-full xl:max-w-[1024px] flex w-full items-center justify-between flex-wrap items-stretch gap-4">
-
-                            <div class="card">
-                                <a href="#">
-                                    <img src="/assets/sample.jpg" style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                  <h4 class="card-title"><a href="#">Card title</a></h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    
-                                  <p class="text-center mt-5">
-                                    <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal">See Why Solodev WXP</a>
-                                  </p>
-                                 <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
-                                  <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/qN3OueBm9F4?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                  </div>
-                                  
-                                  <a href="#" class="text-button">Demo </a>
-                                  <a href="#" class="text-button">Code </a>
-                                </div>
-                                    <div class="card-footer">
-                                        <div class="project-tags" role="list">
-                                            <button class="project-tag">
-                                                <span aria-hidden="true">#</span>
-                                                css
-                                              </button><button class="project-tag" >
-                                                <span aria-hidden="true">#</span>
-                                                js
-                                              </button>
-                                          </div>
-                                    </div>
-                            </div>
                             
                             <div class="card">
                                 <a href="https://play.google.com/store/apps/details?id=com.funsource.tebaklagu"  target="_blank">
@@ -147,19 +124,19 @@
                                     300 participants + all Indonesia regions
                                     </p>
                                     
-                                  <a href="#" class="text-button">More details</a>
+                                  <a class="popup-youtube text-button" href="https://www.youtube.com/watch?v=KbwqEGmZHGY" >More details</a>
                                 </div>
-                                    <div class="card-footer">
-                                        <div class="project-tags" role="list">
-                                            <button class="project-tag">
-                                                <span aria-hidden="true">#</span>
-                                                Unity Engine
-                                              </button><button class="project-tag" >
-                                                <span aria-hidden="true">#</span>
-                                                C#
-                                              </button>
-                                          </div>
-                                    </div>
+                                <div class="card-footer">
+                                    <div class="project-tags" role="list">
+                                        <button class="project-tag">
+                                            <span aria-hidden="true">#</span>
+                                            Unity Engine
+                                            </button><button class="project-tag" >
+                                            <span aria-hidden="true">#</span>
+                                            C#
+                                            </button>
+                                        </div>
+                                </div>
                             </div>
                             
                             <div class="card">
