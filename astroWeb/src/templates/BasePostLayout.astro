@@ -1,0 +1,21 @@
+---
+import Base from "./Base.astro";
+
+---
+
+<style>
+    .blog {
+        background-color: #18191A;
+        color: white;
+        padding: 3rem;
+        border-radius: 10px;
+    }
+</style>
+
+<Base> 
+    <div class="px-3 md:px-6 lg:px-10 xl:px-40 flex w-full items-center justify-center mt-0 md:mt-32 lg:mt-40 xl:mt-48">
+        <section id="about" class="blog w-full xl:max-w-[1024px]">
+            <slot></slot>
+        </section>
+    </div>
+</Base>
