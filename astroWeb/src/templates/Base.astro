@@ -2,6 +2,8 @@
 import Body from '../layouts/Body.astro';
 import '../styles/actual.css';
 import '../styles/main.css';
+
+const {showNavName} = Astro.props;
 ---
 
 <html lang="en">
@@ -37,6 +39,12 @@ import '../styles/main.css';
 			});
 			 
 		  </script>
+
+		  <style>
+			.nav-name {
+				color:#FEBC2E !important
+			}
+		  </style>
 	</head>
 	<body>
 		<div id="root">
@@ -47,6 +55,9 @@ import '../styles/main.css';
 				<div
 				   class="px-3 md:px-6 lg:px-10 xl:px-40 flex w-full items-center justify-center top-[0px]  z-10">
 				   <nav class="w-full xl:max-w-[1024px] bg-navbar hidden rounded-b-lg nav-padding md:flex">
+					
+					{showNavName && <div class="text-navbar"><a href="/" > <span class="nav-name">Alvin's</span> Project Collections</a></div>}
+
 					   <ul class="flex w-full items-center justify-between max-w-[560px] flex-1 list-none" 
 					   style="margin-left: auto;max-width: 200px;">
 						   <li class="text-navbar"><a href="https://www.linkedin.com/in/alvinmaulana14/">Linkedin</a></li>
