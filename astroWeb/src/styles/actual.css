@@ -196,6 +196,13 @@ body {
     font-family: "Anek Latin", sans-serif;
 }
 
+.my-font {
+    margin: .67em 0;
+    font-weight: var(--base-text-weight-semibold, 600);
+    padding-bottom: .3em;
+    font-size: 2em;
+}
+
 .card-title a {
     text-decoration: none;
     font-family: inherit;

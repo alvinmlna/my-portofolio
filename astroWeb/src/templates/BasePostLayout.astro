@@ -1,6 +1,7 @@
 ---
 import Base from "./Base.astro";
 import '../../node_modules/github-markdown-css/github-markdown.css';
+const {frontmatter} = Astro.props;
 
 ---
 
@@ -28,6 +29,7 @@ import '../../node_modules/github-markdown-css/github-markdown.css';
         <section id="about" class="  w-full" style="max-width: 980px;">
             <!-- <a href="/" class="text-button mt-6 mb-4">Back to Home</a>  -->
             <div class="markdown-body">
+                <div class="text-center text-3xl font-bold my-font">{frontmatter.title}</div>
                 <slot></slot>
             </div>
         </section>
