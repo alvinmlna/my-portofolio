@@ -58,6 +58,11 @@ body {
     font-weight: 400
 }
 
+.text-p2 {
+    font-family: "Anek Latin", sans-serif;
+    color: white;
+}
+
 :where(.underline):after {
     content: "";
     position: absolute;

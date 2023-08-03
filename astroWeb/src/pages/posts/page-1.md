@@ -1,6 +1,6 @@
 ---
 layout: ../../templates/BasePostLayout.astro
-title: Icikiwir
+title: Sample page
 
 ---
 

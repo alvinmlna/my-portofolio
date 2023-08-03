@@ -2,32 +2,67 @@
 import Cards from "../components/Cards.astro";
 
 ---
-
-
-
+<style>
+    .fullScreen {
+        height: 100vh;
+    }
+</style>
 
         <div id="target-about"></div>
-        <div class="px-3 md:px-6 lg:px-10 xl:px-40 flex w-full items-center justify-center mt-0 md:mt-32 lg:mt-40 xl:mt-48">
-            <section id="about" class="w-full xl:max-w-[1024px]">
-                <div class="flex w-full items-center justify-evenly flex-col lg:flex-row">
+        <div class="px-3 md:px-6 lg:px-10 xl:px-40 flex w-full items-center justify-center mt-0 md:mt-32 lg:mt-40 xl:mt-48" style="width: 100%;">
+            <section id="about" class="fullScreen w-full xl:max-w-[1024px]">
+                <div class="flex w-full items-center justify-evenly flex-col lg:flex-row" style="height: 100%;">
                     <div class="mt-6 text-center md:mt-12 lg:mt-0 lg:text-start">
                         <h2 class="text-h2"> <span class="hithere ml-1 inline-block">👋</span> Hey! My name is 
                             <span style="color:#FEBC2E">Alvin.</span>
                         </h2>
-                        <p class="text-p1 mx-auto mb-10 mt-4" style="margin-left: 75px;">
-                            Welcome to my <span class="underline underline--accent">project collections!</span>
+                        <p class="text-p2 mx-auto mb-10 mt-4" style="margin-left: 75px;">
+                            It’s incredibly fulfilling to know when our system is making a positive impact on so many people.</span>
                         </p>
+                        <a href="#portofolio" class="text-button mt-6">Project Collections </a> 
                     </div>
                 </div>
             </section>
         </div>
         
-        <div id="target-hobby"></div>
+        <div id="portofolio"></div>
         <div
             class="px-3 flex w-full items-center justify-center mt-10 ">
             <section id="hobby" class="w-full xl:max-w-[1024px]">
-                <div id="target-hobby-last"></div>
+                <p class="text-p1 mx-auto mb-10 mt-4" style="margin-left: 75px;">
+                    <span class="underline underline--accent">Project collections!</span>
+                </p>
+
                 <div class="w-full xl:max-w-[1024px] flex w-full items-center justify-between flex-wrap items-stretch gap-4">
+                    
+                    <Cards title="Tebak Lagu Indonesia"
+                        description = "Simple addictive Indonesian music trivia game. More than 1M downloads on Google playstore."
+                        img = "/assets/tebaklagu.png"
+                        href = "https://play.google.com/store/apps/details?id=com.funsource.tebaklagu"
+                        tags = "Unity Engine, C#"
+                    />
+                    
+                    <Cards title="Olivia Math Adventure"
+                        img = "/assets/mathadventure.png"
+                        href = "https://www.youtube.com/watch?v=KbwqEGmZHGY"
+                        tags = "Unity Engine, C#"
+                        IsdetailVideo
+                    >
+                    🏆3rd winner of educational mobile game  <br/>
+                            Indonesia government event - Kihajar 2020 <br>
+                            300 participants + all Indonesia regions
+                    </Cards>
+
+                    <Cards title="Gamer Simulator"
+                        img = "/assets/GamerSimulator.jpg"
+                        href = "https://www.youtube.com/watch?v=Wj8CxT94zDw"
+                        tags = "Unity Engine, C#"
+                        IsdetailVideo
+                    >
+                    🏆3rd winner of educational mobile game  <br/>
+                            Indonesia government event - Kihajar 2020 <br>
+                            300 participants + all Indonesia regions
+                    </Cards>
                     
                     <Cards title="Tebak Lagu Indonesia"
                         description = "Simple addictive Indonesian music trivia game. More than 1M downloads on Google playstore."
