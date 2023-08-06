@@ -1,5 +1,6 @@
 ---
 const {href = "#"} = Astro.props;
+const {hrefTarget = "_self"} = Astro.props;
 const {title} = Astro.props;
 const {description} = Astro.props;
 const {IsdetailVideo = false} = Astro.props;
@@ -18,7 +19,7 @@ if (tags) {
 
     {
       !IsdetailVideo ? 
-      <a href={href}  target="_blank"> <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="..."></a>
+      <a href={href}  target={hrefTarget}> <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="..."></a>
       :
       <a href={href} class="popup-youtube"  style="font-size: 20px;" target="_blank"> <img src={img} style="border-radius: 15px 15px 0 0;" class="card-img-top" alt="..."></a>
     }
