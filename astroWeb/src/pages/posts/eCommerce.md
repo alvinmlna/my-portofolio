@@ -20,10 +20,10 @@ Simple eCommerce web application using client server infrastructure. with build 
 ## Technologies
 
 - • C# Language
-- • Net Core 7 Web API
-- • RESTful API
-- • Angular 15
-- • Entity Framework Codef First (PostgreSQL)
+- • Net Core 7 Web API (Back End)
+- • RESTful API 
+- • Angular 15 (Front End)
+- • Entity Framework Code First (PostgreSQL)
 - • Implements Repository, Unit of Work and Specification pattern
 - • Implements JWT Authentication 
 - • Using ASP.Net Identity for login and registration

@@ -13,8 +13,8 @@ import Cards from "../components/Cards.astro";
             <section id="about" class="fullScreen w-full xl:max-w-[1024px]">
                 <div class="flex w-full items-center justify-evenly flex-col lg:flex-row" style="height: 100%;">
                     <div class="mt-6 text-center md:mt-12 lg:mt-0 lg:text-start">
-                        <h2 class="text-h2"> <span class="hithere ml-1 inline-block">👋</span> Hey! My name is 
-                            <span style="color:#FEBC2E">Alvin.</span>
+                        <h2 class="text-h2">  Hey! My name is 
+                            <span style="color:#FEBC2E">Alvin.</span><span class="hithere ml-1 inline-block">👋</span>
                         </h2>
                         <p class="text-p2 mx-auto mb-10 mt-4" style="margin-left: 75px;">
                             It’s incredibly fulfilling to know when our system is making a positive impact on so many people.</span>
@@ -35,21 +35,18 @@ import Cards from "../components/Cards.astro";
                 <div class="w-full xl:max-w-[1024px] flex w-full items-center justify-between flex-wrap items-stretch gap-4">
                     
                     <Cards title="eCommerce with .NET 7 & Angular"
-                        description = "Simple eCommerce web application using client server infrastructure. with build in payment feature using Stripe."
+                        description = "eCommerce web application using client server infrastructure. with build in payment feature using Stripe."
                         img = "/assets/gif/eCommerce1.gif"
-                        href = "/posts/eCommerce"
+                        href = "/posts/ecommerce"
                         tags = "C#, .NET Core, Angular"
                     />
                     
-                    <Cards title="Olivia Math Adventure"
-                        img = "/assets/mathadventure.png"
-                        href = "https://www.youtube.com/watch?v=KbwqEGmZHGY"
-                        tags = "Unity Engine, C#"
-                        IsdetailVideo
+                    <Cards title="COVID-19 Audit"
+                        description = "Dynamic checklist form to ensure all employee compliance to covid preventive rule."
+                        img = "/assets/audit_checklist2.png"
+                        href = "/posts/covid-audit"
+                        tags = "C#, .NET Core, .NET MVC"
                     >
-                    🏆3rd winner of educational mobile game  <br/>
-                            Indonesia government event - Kihajar 2020 <br>
-                            300 participants + all Indonesia regions
                     </Cards>
 
                     <Cards title="Gamer Simulator"
