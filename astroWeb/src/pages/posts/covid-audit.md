@@ -6,11 +6,11 @@ title: COVID19 Audit
 
 <div class="w-75 mx-auto mb-3">
     <h6 class="text-center">Admin Page</h6>
-    <img src="/assets/audit_home.png" class="d-block w-100" alt="...">
+    <img src="/portofolio/assets/audit_home.png" class="d-block w-100" alt="...">
 </div>
 <div class="w-75 mx-auto mb-3">
     <h6 class="text-center">Audit Checklists</h6>
-    <img src="/assets/audit_checklist.png" class="d-block w-100" alt="...">
+    <img src="/portofolio/assets/audit_checklist.png" class="d-block w-100" alt="...">
 </div>
 
 ## Description

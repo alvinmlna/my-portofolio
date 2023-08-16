@@ -7,7 +7,7 @@ title: .NET Web Scrapper with Telegram Alert
 
 
 <div class="w-75 mx-auto mb-3">
-    <img src="/assets/web-scrapping.png" class="d-block w-100" alt="...">
+    <img src="/portofolio/assets/web-scrapping.png" class="d-block w-100" alt="...">
 </div>
 
 ## Description

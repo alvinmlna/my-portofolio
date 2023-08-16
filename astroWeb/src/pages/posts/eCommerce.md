@@ -6,11 +6,11 @@ title: Build eCommerce using .NET 7 & Angular 15
 
 <div class="w-75 mx-auto mb-3">
     <h6 class="text-center">Product View</h6>
-    <img src="/assets/gif/eCommerce1.gif" class="d-block w-100" alt="...">
+    <img src="/portofolio/assets/gif/eCommerce1.gif" class="d-block w-100" alt="...">
 </div>
 <div class="w-75 mx-auto mb-3">
     <h6 class="text-center">Order Item</h6>
-    <img src="/assets/gif/eCommerce2.gif" class="d-block w-100" alt="...">
+    <img src="/portofolio/assets/gif/eCommerce2.gif" class="d-block w-100" alt="...">
 </div>
 
 ## Description
