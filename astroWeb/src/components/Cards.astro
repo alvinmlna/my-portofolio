@@ -29,7 +29,7 @@ if (tags) {
       <p class="card-title">
         {
           !IsdetailVideo ? 
-          <a href={href} style="font-size: 20px;" target="_blank">{title}</a>
+          <a href={href} style="font-size: 20px;" target={hrefTarget}>{title}</a>
           :
           <a href={href} class="popup-youtube" style="font-size: 20px;" target="_blank">{title}</a>
         }
@@ -39,7 +39,7 @@ if (tags) {
         
       {
         !IsdetailVideo ? 
-        <a href={href}  target="_blank" class="text-button mt-6">More details</a> 
+        <a href={href}  target={hrefTarget} class="text-button mt-6">More details</a> 
         :
         <a class="popup-youtube text-button mt-6" href={href} >More details</a>
       }

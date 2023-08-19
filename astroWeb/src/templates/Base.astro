@@ -9,7 +9,15 @@ const {showNavName} = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Alvin Portofolio</title>
@@ -62,7 +70,7 @@ const {showNavName} = Astro.props;
 				   class="px-3 md:px-6 lg:px-10 xl:px-40 flex w-full items-center justify-center top-[0px]  z-10">
 				   <nav class="w-full xl:max-w-[1024px] bg-navbar hidden rounded-b-lg nav-padding md:flex">
 					
-					{showNavName && <div class="text-navbar"><a href="/portofolio" > <span class="nav-name">Alvin's</span> Project Collections</a></div>}
+					{showNavName && <div class="text-navbar"><a href="/portofolio/" > <span class="nav-name">Alvin's</span> Project Collections</a></div>}
 
 					   <ul class="flex w-full items-center justify-between max-w-[560px] flex-1 list-none" 
 					   style="margin-left: auto;max-width: 300px;">
