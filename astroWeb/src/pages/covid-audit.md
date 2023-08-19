@@ -1,5 +1,5 @@
 ---
-layout: ../../templates/BasePostLayout.astro
+layout: ../templates/BasePostLayout.astro
 title: COVID19 Audit
 
 ---
