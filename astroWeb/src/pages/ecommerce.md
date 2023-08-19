@@ -1,5 +1,5 @@
 ---
-layout: ../../templates/BasePostLayout.astro
+layout: ../templates/BasePostLayout.astro
 title: Build eCommerce using .NET 7 & Angular 15
 
 ---
